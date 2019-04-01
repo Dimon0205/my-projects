@@ -3,8 +3,8 @@
 	margin: 0;
 }
 
-html, body {
-	height: 100%
+html {
+	position: relative; min-height: 100%;
 }
 
 body {
@@ -18,9 +18,7 @@ body {
 	background-color: #fff;
 }
 
-article, aside, figcaption, footer, header, main, section {
-  	display: block;
-}
+
 
 header, footer {
 	width: 100%;
@@ -40,11 +38,7 @@ footer {
 	background: gray;
 }
 
-.wraper {
-	text-align: center;
-	position: relative;
-	min-height: 100%;
-}
+
 .container {
 	width: 100%;
 	max-width: 960px;
@@ -71,6 +65,10 @@ footer {
 	height: 300px;
 	margin-right: -0.25rem;
 	margin-bottom: 5px
+}
+
+.inline, header p, footer p {
+	text-align: center;
 }
 
 .box {
