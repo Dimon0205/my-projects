@@ -7,84 +7,105 @@
 	<meta http-equiv="Content-Type" content="text/html, charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="css/normalise.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
 </head>
 <body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="header-content">
-				<nav class="header-meny">
-					<a href="#" class="logo">
-						<img src="image/logo.png" alt="Tajam">
-					</a>
+	<header class="header">
+		<div class="container">
+			<nav class="navbar">
+				<a href="#" class="navbar-logo">
+					<img src="image/logo.png" alt="Tajam">
+				</a>
 				
-					<ul class="nav">
-						<li class="nav-item"><a href="" class="nav-item__link active">HOME</a></li>
-						<li class="nav-item"><a href="" class="nav-item__link">ABOUT</a></li>
-						<li class="nav-item"><a href="" class="nav-item__link">EXPERTISE</a></li>
-						<li class="nav-item"><a href="" class="nav-item__link">TEAMS</a></li>
-						<li class="nav-item"><a href="" class="nav-item__link">WORKS</a></li>
-						<li class="nav-item"><a href="" class="nav-item__link">PEOPLE SAY</a></li>
-						<li class="nav-item"><a href="" class="nav-item__link">CONTACTS</a></li>
-					</ul>
-				</nav>
-				<div class="slide-header">
-					<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-				    	<ol class="carousel-indicators">
-						    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-						    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-						    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-						    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-				    	</ol>
-				    	<div class="carousel-inner">
-				      		<div class="carousel-item active">
-				        		<div class="carousel-caption">
-				          			<h1>We Are Awesome Creative Agency</h1>
-				          			<hr>
-				          			<p>This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-				          			<p><br></p>
-				          			<p><a class="btn btn-lg btn-outline-info" href="#" role="button">LEARN MORE</a></p>
-				        		</div>
-				      		</div>
-					      	<div class="carousel-item">
-					        	<div class="carousel-caption">
-					          		<h1>We Are Awesome Creative Agency</h1>
-					          		<hr>
-					          		<p>This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-					          		<p><br></p>
-					          		<p><a class="btn btn-lg btn-outline-info" href="#" role="button">LEARN MORE</a></p>
-					        	</div>
-					      	</div>
-					      	<div class="carousel-item">
-					        	<div class="carousel-caption">
-					          		<h1>We Are Awesome Creative Agency</h1>
-					          		<hr>
-					          		<p>This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-					          		<p><br></p>
-					          		<p><a class="btn btn-lg btn-outline-info" href="#" role="button">LEARN MORE</a></p>
-					        	</div>
-					      	</div>
-					      	<div class="carousel-item">
-					        	<div class="carousel-caption">
-					          		<h1>We Are Awesome Creative Agency</h1>
-					          		<hr>
-					          		<p>This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-					          		<p><br></p>
-					          		<p><a class="btn btn-lg btn-outline-info" href="#" role="button">LEARN MORE</a></p>
-					        	</div>
-					      	</div>
-				    	</div>
-				  	</div>
+				<ul class="nav">
+					<li class="nav-item"><a href="" class="nav-item__link active">HOME</a></li>
+					<li class="nav-item"><a href="" class="nav-item__link">ABOUT</a></li>
+					<li class="nav-item"><a href="" class="nav-item__link">EXPERTISE</a></li>
+					<li class="nav-item"><a href="" class="nav-item__link">TEAMS</a></li>
+					<li class="nav-item"><a href="" class="nav-item__link">WORKS</a></li>
+					<li class="nav-item"><a href="" class="nav-item__link">PEOPLE SAY</a></li>
+					<li class="nav-item"><a href="" class="nav-item__link">CONTACT</a></li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+	<section class="welcome">
+	<!-- Slider main container -->
+		<div class="swiper-container welcome_first_screen">
+
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper ">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<div class="container">
+						<div class="welcome_first_screen__item">
+							<h1>We Are Awesome Creative Agency</h1>
+							<hr>
+							<p>This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+							<span><a class="button welcome_first_screen__button button_lg button_outline_info" href="#" role="button">LEARN MORE</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="container">
+						<div class="welcome_first_screen__item">
+							<h1>We Are Awesome Creative Agency</h1>
+							<hr>
+							<p>This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+							<span><a class="button welcome_first_screen__button button_lg button_outline_info" href="#" role="button">LEARN MORE</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="container">
+						<div class="welcome_first_screen__item">
+							<h1>We Are Awesome Creative Agency</h1>
+							<hr>
+							<p>This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+							<span><a class="button welcome_first_screen__button button_lg button_outline_info" href="#" role="button">LEARN MORE</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="container">
+						<div class="welcome_first_screen__item">
+							<h1>We Are Awesome Creative Agency</h1>
+							<hr>
+							<p>This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+							<span><a class="button welcome_first_screen__button button_lg button_outline_info" href="#" role="button">LEARN MORE</a></span>
+						</div>
+					</div>
 				</div>
 			</div>
-		</header>
-				  	
-	</div>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		</div>
+	</section>
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js" crossorigin="anonymous"></script>
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+		delay: 4000,
+        disableOnInteraction: false,
+      },
+      
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script> 
 </body>
 </html>
