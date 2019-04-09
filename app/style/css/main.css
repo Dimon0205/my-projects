@@ -20,31 +20,26 @@ body {
 }
 
 
-
-header, footer {
-	width: 100%;
-	height: 60px;
-	color: white;
-	position: relative;
+.flex_body {
+	display: flex;
+	flex-direction: column;
 }
 
-header {
+.flex_header, .flex_footer {
+	flex: 0 0 100%;
+	height: 60px;
+}
+
+.flex_header {
 	background: blue;
 }
 
-footer {
-	position: absolute;
-	left: 0;
-	bottom: 0;
+.flex_footer {
 	background: gray;
 }
 
-
-.container {
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	padding-bottom: 80px;
+.flex_container {
+	display: flex;
 }
 
 .sidebar-1 {
