@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="  sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+	crossorigin="anonymous"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+	<script>
+		$("#form-price").validate({
+		  invalidHandler: function(event, validator) {
+		    // 'this' refers to the form
+		    var errors = validator.numberOfInvalids();
+		    if (errors) {
+		      var message = errors == 1
+		        ? 'You missed 1 field. It has been highlighted'
+		        : 'You missed ' + errors + ' fields. They have been highlighted';
+		      $("div.error span").html(message);
+		      $("div.error").show();
+		    } else {
+		      $("div.error").hide();
+		    }
+		  }
+		});
+	</script> -->
+</head>
+<body>
+	<form name="price" id="form-price" method="post" action="" class="formprise">
+		<label class=""> От куда</label>
+		<select name="depart" class="inp" data-rule="required">
+			<option selected disabled>Выберите город</option>
+			<option value="1">Москва</option>
+			<option value="2">С.-Петербург</option>
+			<option value="3">Ярославль</option>
+		</select>
+		<label class=""> Куда</label>
+		<select name="dest" class="inp" data-rule="required">
+			<option selected disabled>Выберите город</option>
+			<option value="1">Москва</option>
+			<option value="2">С.-Петербург</option>
+			<option value="3">Ярославль</option>
+		</select>
+		<div class="dimension">
+			<div class="multipl">
+				<label class=""> Габариты груза в метрах</label>
+				<div class="multipl-cont">
+					<input type="number" name="length" class="inp" placeholder="Длинна" data-rule="required number"></input><span>x</span>
+					<input type="number" name="height" class="inp" placeholder="Высота" data-rule="required number"></input><span>x</span>
+					<input type="number" name="width" class="inp" placeholder="Ширина"  data-rule="required number"></input>
+				</div>
+
+			</div>
+			<div class="multipl">
+				<label class="">Объем М³</label>
+				<div class="multipl-cont">
+					<input type="number" name="volume" class="inp" placeholder="М³" data-rule="required namber"></input>
+				</div>
+
+			</div>
+		</div>
+
+		<label class="">Вес груза в кг.</label>
+		<input type="number" name="weight" class="inp" placeholder="Вес" data-rule="required namber"></input>
+		<input type="hidden" name="price" value="price">
+		<button name="calc" value="рассчитать">рассчитать</button>
+		
+	</form>
+	
+	<script src="script.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script>
+		$('.dimension').on('keyup', function() {
+
+			var	length = +$('#length').val(),
+			height = +$('#height').val(),
+			width = +$('#width').val(),
+			volume = +$('#volume').val();
+
+			volume = length * height * width;
+
+			$('#volume').val(volume);
+			
+
+		});
+	</script>
+</body>
+</html>
