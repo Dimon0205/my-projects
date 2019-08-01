@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
-	<meta charset="UTF-8">
 	<title>Tajam</title>
-	<meta http-equiv="Content-Type" content="text/html, charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/normalise.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/swiper.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="header">
-		<!--div class="container header-navbar">
-			<div class="navbar"-->
 				<a href="#" class="logo">
 					<img class="img" src="image/logo.png" alt="Tajam">
 				</a>
-				<div class="menu-icon">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<nav class="nav">
-					<a href="" class="nav-item active">HOME</a>
-					<a href="" class="nav-item">ABOUT</a>
-					<a href="" class="nav-item">EXPERTISE</a>
-					<a href="" class="nav-item">TEAMS</a>
-					<a href="" class="nav-item">WORKS</a>
-					<a href="" class="nav-item">PEOPLE SAY</a>
-					<a href="" class="nav-item">CONTACT</a>
+				<a href="#" class="toggleMenu"><span></span><span></span><span></span><span></span></a>
+				<nav class="nav header-nav">
+						<a href="" class="nav-item active">HOME</a>
+						<a href="" class="nav-item">ABOUT</a>
+						<a href="" class="nav-item">EXPERTISE</a>
+						<a href="" class="nav-item">TEAMS</a>
+						<a href="" class="nav-item">WORKS</a>
+						<a href="" class="nav-item">PEOPLE SAY</a>
+						<a href="" class="nav-item">CONTACT</a>
 				</nav>
-			<!--/div>
-		</div-->
 	</header>
 	<section class="welcome">
 		<!-- Slider main container -->
@@ -48,7 +36,7 @@
 				<div class="swiper-wrapper ">
 					<!-- Slides -->
 					<div class="swiper-slide">
-						<div class="welcome-item">
+						<div class="slide-item">
 							<div class="block-item">
 								<h1 class="h1 block-item__title block-item__title_capitalise">we are awesome creative agency</h1>
 							</div>
@@ -58,7 +46,7 @@
 						</div>
 					</div>
 					<div class="swiper-slide">
-						<div class="welcome-item">
+						<div class="slide-item">
 							<div class="block-item">
 								<h1 class="h1 block-item__title block-item__title_capitalise">we are awesome creative agency</h1>
 							</div>							
@@ -68,7 +56,7 @@
 						</div>
 					</div>
 					<div class="swiper-slide">
-						<div class="welcome-item">
+						<div class="slide-item">
 							<div class="block-item">
 								<h1 class="h1 block-item__title block-item__title_capitalise">we are awesome creative agency</h1>
 							</div>
@@ -78,7 +66,7 @@
 						</div>
 					</div>
 					<div class="swiper-slide">
-						<div class="welcome-item">
+						<div class="slide-item">
 							<div class="block-item">
 								<h1 class="h1 block-item__title block-item__title_capitalise">we are awesome creative agency</h1>
 							</div>
@@ -103,7 +91,7 @@
 					</div>
 					<p class="lorem">This is WEB version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
 					<p class="lorem">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-					<a class="button about-item__button" href="#" role="button">LEARN MORE</a>
+					<a class="button" href="#" role="button">LEARN MORE</a>
 				</div>
 			</div>
 		</div>
@@ -262,7 +250,7 @@
 					</div>
 				</div>
 				<div class="portfolio-item__link">
-					<a class="link" href="#">See All Project in dribbble</a>
+					<a class="link" href="#">See All Project</a>
 				</div>
 			</div>
 			<div class="slide-portfolio">
@@ -280,7 +268,7 @@
 				</div>
 			</div>
 			<div class="portfolio-load">
-				<a class="button" href="#" role="button">load more</a>
+				<a class="button button-large" href="#" role="button">load more</a>
 			</div>
 		</div>
 	</section>
@@ -292,44 +280,58 @@
 					<div class="swiper-wrapper">
 						<!-- Slides -->
 						<div class="swiper-slide reviews-item__customer">
-							<q class="reviews-item__customer-quotes"></q>
-							<p class="reviews-item__customer-text">This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-							<div class="reviews-item__customer-data">
-								<span class="reviews-item__customer-name">customer name</span>
-								<span class="reviews-item__customer-position">customer position</span>
+							<div class="swiper-slide-item">
+								<q class="reviews-item__customer-quotes"></q>
+								<p class="reviews-item__customer-text">This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+								<div class="reviews-item__customer-data">
+									<span class="reviews-item__customer-name">customer name</span>
+									<span class="reviews-item__customer-position">customer position</span>
+								</div>
 							</div>
 						</div>
 						<div class="swiper-slide reviews-item__customer">
-							<q class="reviews-item__customer-quotes"></q>
-							<p class="reviews-item__customer-text">This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-							<div class="reviews-item__customer-data">
-								<span class="reviews-item__customer-name">customer name</span>
-								<span class="reviews-item__customer-position">customer position</span>
+							<div class="swiper-slide-item">
+								<q class="reviews-item__customer-quotes"></q>
+								<p class="reviews-item__customer-text">This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+								<div class="reviews-item__customer-data">
+									<span class="reviews-item__customer-name">customer name</span>
+									<span class="reviews-item__customer-position">customer position</span>
+								</div>
 							</div>
+							
 						</div>
 						<div class="swiper-slide reviews-item__customer">
-							<q class="reviews-item__customer-quotes"></q>
-							<p class="reviews-item__customer-text">This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-							<div class="reviews-item__customer-data">
-								<span class="reviews-item__customer-name">customer name</span>
-								<span class="reviews-item__customer-position">customer position</span>
+							<div class="swiper-slide-item">
+								<q class="reviews-item__customer-quotes"></q>
+								<p class="reviews-item__customer-text">This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+								<div class="reviews-item__customer-data">
+									<span class="reviews-item__customer-name">customer name</span>
+									<span class="reviews-item__customer-position">customer position</span>
+								</div>
 							</div>
+							
 						</div>
 						<div class="swiper-slide reviews-item__customer">
-							<q class="reviews-item__customer-quotes"></q>
-							<p class="reviews-item__customer-text">This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-							<div class="reviews-item__customer-data">
-								<span class="reviews-item__customer-name">customer name</span>
-								<span class="reviews-item__customer-position">customer position</span>
+							<div class="swiper-slide-item">
+								<q class="reviews-item__customer-quotes"></q>
+								<p class="reviews-item__customer-text">This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+								<div class="reviews-item__customer-data">
+									<span class="reviews-item__customer-name">customer name</span>
+									<span class="reviews-item__customer-position">customer position</span>
+								</div>
 							</div>
+							
 						</div>
 						<div class="swiper-slide reviews-item__customer">
-							<q class="reviews-item__customer-quotes"></q>
-							<p class="reviews-item__customer-text">This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-							<div class="reviews-item__customer-data">
-								<span class="reviews-item__customer-name">customer name</span>
-								<span class="reviews-item__customer-position">customer position</span>
+							<div class="swiper-slide-item">
+								<q class="reviews-item__customer-quotes"></q>
+								<p class="reviews-item__customer-text">This is Web version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+								<div class="reviews-item__customer-data">
+									<span class="reviews-item__customer-name">customer name</span>
+									<span class="reviews-item__customer-position">customer position</span>
+								</div>
 							</div>
+							
 						</div>
 					</div>
 					
@@ -370,18 +372,18 @@
 					<h2 class="h2">give us a good news</h2>
 					<form id="contactForm" action="№" method="post">
 						<div class="field-block">
-							<input id="name" class="field" name="name" required type="text" placeholder="Name">
+							<input class="field" name="name" required type="text" placeholder="Name">
 						</div>
 						<div class="field-block">
-							<input id="email" class="field" name="email" required type="email" placeholder="Email">
+							<input class="field" name="email" required type="email" placeholder="Email">
 						</div>
 						<div class="field-block">
-							<input id="text" class="field" name="text" required type="text" placeholder="Subject">
+							<input class="field" name="text" required type="text" placeholder="Subject">
 						</div>
 						<div class="field-block">
-							<textarea id="message" class="field" required name="message" rows="Massage" placeholder="Your Massage"></textarea>
+							<textarea class="field" required name="message" placeholder="Your Massage"></textarea>
 						</div>
-						<button id="button" class="button" type="submit">submit</button>
+						<button class="button button-large" type="submit">submit</button>
 						<div class="result">
 							<span id="answer"></span>
 							<span id="loader"><img src="images/loader.gif" alt=""></span>
@@ -501,16 +503,40 @@
 				</div>
 			</div>
 			<div class="footer-navbar">
-				<nav class="nav nav-footer">
+				<nav class="nav">
 					<a href="" class="nav-item active">help</a>
 					<a href="" class="nav-item">terms&condition</a>
 					<a href="" class="nav-item">privasy</a>
 				</nav>
+				<small class="copy">Copyright &copy; 2019-Tajam Creative</small>
 			</div>
 		</div>
 	</footer>
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js" crossorigin="anonymous"></script>
+	<script>
+		$(function  () {
+			var toggleMenu = $('.toggleMenu'),
+				nav = $('.header-nav .nav-item'),
+				navHeight = nav.height();
+
+				$(toggleMenu).on('click', function (e) {
+					e.preventDefault();
+					nav.slideToggle({
+						start: function() {
+					    jQuery(this).css('display','block');
+					  }
+					});
+				});
+				$(window).resize(function(){
+			    var w = $(window).width();
+			    if(w > 760 && nav.is(':hidden')) {
+			        nav.removeAttr('style');
+			    }
+			});
+
+		});
+	</script>
 	<script>
     var swiper1 = new Swiper('.swiper-container', {
       spaceBetween: 30,
